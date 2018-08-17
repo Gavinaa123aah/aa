@@ -1,0 +1,9 @@
+*** Settings ***
+Library           ../../ehub/lib/SSHLib.py
+
+*** Test Cases ***
+case2
+    SSHLib.combineputget    10.1.28.79    LJF    123    duration=1    interval=5
+
+case1
+    SSHLib.combineputget    10.1.12.170    test1    123    duration=1    interval=5
